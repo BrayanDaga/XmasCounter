@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #3535EC;
+    font-family: 'Livvic', sans-serif;
+    line-height: 1;
+
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 350px;
+    margin: 32px auto 0 auto;
+}
+.xmas-stage{
+    position: relative;
+    height: 600px;
+
+}
+.panel{
+    border-radius: 8px;
+    background-color: #120945;
+    padding: 16px 24px;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    color: palevioletred;
+    margin-bottom: 24px;
+}
+
+.counter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter-block{
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.counter-block:last-child{
+    color: goldenrod;
+}
+
+.counter-block-number{
+    font-size: 48px;
+}
+
+
+.counter-block-label{
+    font-size: 20px;
+}
+
+/* Regali */
+.gift{
+    position: absolute;
+    width: 120px;
+}
+
+.gift_1{
+    bottom: 50px;
+    right: 30px;
+}
+.gift_2{
+    bottom: 50px;
+    left: 36px;
+    width: 120px;
+}
+.gift_3{
+    bottom: 110px;
+    left: 60px;
+    width: 60px;
+}
+
+/* PAlline */
+
+.ball{
+    position: absolute;
+    width: 65px;
+}
+
+.ball_1{
+    top: 340px;
+    left: 86px;
+}
+.ball_2{
+    top: 274px;
+    left: 115px;
+}
+.ball_3{
+    top: 255px;
+    right: 102px;
+}
+.ball_4{
+    top: 360px;
+    right: 75px;
+}
+.ball_5{
+    top: 325px;
+    left: 155px;
+}
+
+.gift:hover{
+    animation-name: jingle;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.ball:hover{
+    animation-name: bump;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* animations */
+@keyframes jingle{
+    from{
+        transform: rotate(-15deg);
+    }
+    to{
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes bump {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
