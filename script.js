@@ -4,7 +4,7 @@ const minutesElm = document.querySelector("#minutes");
 const secondsElm = document.querySelector("#seconds");
 const panelElm = document.querySelector(".panel"); 
 
-const enDate = new Date("December 25 2023");
+const enDate = new Date("December 25 2024");
 const enDateInMs = enDate.getTime();
 
 const secondInMs = 1000;
